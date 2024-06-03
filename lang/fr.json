@@ -1,0 +1,184 @@
+{
+  "AFMBE.XP": "XP",
+  "AFMBE.Core": "Principal",
+  "AFMBE.Equipment": "Équipement",
+  "AFMBE.Primary Attributes": "Attributs Primaires",
+  "AFMBE.Strength": "Force",
+  "AFMBE.Dexterity": "Dextérité",
+  "AFMBE.Constitution": "Constitution",
+  "AFMBE.Intelligence": "Intelligence",
+  "AFMBE.Perception": "Perception",
+  "AFMBE.Willpower": "Volonté",
+  "AFMBE.Secondary Attributes": "Attributs Secondaires",
+  "AFMBE.Life Points": "Points de Vie",
+  "AFMBE.Endurance": "Endurance",
+  "AFMBE.Speed": "Vitesse",
+  "AFMBE.Initiative": "Initiative",
+  "AFMBE.Essence Pool": "Réser. d'Essence",
+  "AFMBE.Description": "Description",
+  "AFMBE.Qualities & Pulling Strings": "Qualit. et Appuis & Ressources",
+  "AFMBE.Drawbacks": "Désavantages",
+  "AFMBE.Points": "Points",
+  "AFMBE.Skills": "Compétences",
+  "AFMBE.Name": "Nom",
+  "AFMBE.Level": "Niveau",
+  "AFMBE.Aspects": "Aspects",
+  "AFMBE.Powers": "Pouvoirs",
+  "AFMBE.Power": "Pouvoir",
+  "AFMBE.Lifting Capacity": "Capacités de Soulèvement",
+  "AFMBE.Current Weight": "Poids Courant",
+  "AFMBE.Max Carry Limit": "Limite Max de Portage",
+  "AFMBE.Weapons" : "Armes",
+  "AFMBE.Damage": "Dégâts",
+  "AFMBE.Capacity": "Chargeur",
+  "AFMBE.EV": "EV",
+  "AFMBE.Equipped Items": "Objets Équipés",
+  "AFMBE.Qty": "Qté",
+  "AFMBE.Armor Value": "Valeur d´armure",
+  "AFMBE.Items": "Objets",
+  
+  "AFMBE.Norm": "Normal",
+  "AFMBE.Survivor": "Suvivant",
+  "AFMBE.Inspired": "Inspiré",
+
+  "AFMBE.Hopeless": "Effondré",
+  "AFMBE.Forlorn": "Désespéré",
+  "AFMBE.Exhausted": "Épuisé",
+  "AFMBE.Dying": "Mourant",
+  "AFMBE.Semi-Conscious": "Semi-conscient",
+  "AFMBE.Severely Injured": "sévèrement blessé",
+  "AFMBE.Lightly Encumbered": "Légèrement encombré",
+  "AFMBE.Moderately Encumbered": "Modérément encombré",
+  "AFMBE.Heavily Encumbered": "Lourdement encombré",
+
+  "AFMBE.Attributes": "Attributs",
+  "AFMBE.HP": "PdV",
+  "AFMBE.Essence": "Essence",
+  
+  "AFMBE.Range": "Portée",
+  "AFMBE.Damage Multiplier": "Mult. de dégâts",
+  "AFMBE.Damage Type": "Type de dégâts",
+  "AFMBE.Ammo Type": "Type munitions",
+  "AFMBE.Cost": "Coût",
+  
+  "AFMBE.Equipped": "Équipé",
+  "AFMBE.Quantity": "Quantité",
+  "AFMBE.RP": "PR",
+  "AFMBE.Space": "Espace",
+
+  "AFMBE.quality": "qualité",
+  "AFMBE.drawback": "désavantage",
+  "AFMBE.skill": "compétence",
+  "AFMBE.power": "pouvoir",
+  "AFMBE.aspect": "aspect",
+  "AFMBE.weapon": "arme",
+  "AFMBE.item": "objet",
+
+  "AFMBE.New": "Nouv.",
+
+  "AFMBE.Weight": "Poids",
+  "AFMBE.Acceleration": "Accéleration",
+  "AFMBE.Toughness": "Robustesse",
+  "AFMBE.Handling": "Manœuvrabilité",
+  "AFMBE.Damage Cpty": "Enc. dégâts",
+  "AFMBE.Accuracy": "Fiabilité",
+  "AFMBE.Availability": "Disponibilité",
+
+  "AFMBE.Apply modifiers": "Appliquez les modificateurs des Qualités, Désavantages ou Compétences applicables du personnage.",
+  "AFMBE.Simple Test": "Test Simple : 2x Attribut",
+  "AFMBE.Difficult Test": "Test Difficile : 1x Attribut",
+
+  "AFMBE.All Tests suffer -3 penalty": "Tous les tests souffrent d'une pénalité de -3",
+  "AFMBE.Mental tests suffer a -1 penalty": "Les tests mentaux souffrent d'une pénalité de -1",
+  "AFMBE.All Tests suffer -2 penalty": "Tous les tests souffrent d'une pénalité de -2",
+  "AFMBE.Survival Test required to avoid instant death": "Un test de survie nécessaire pour éviter une mort instantanée",
+  "AFMBE.Willpower test required to regain consciousness, penalized by the number their HP is below 0" :
+              "Un test de Volonté demandé pour reprendre conscience, pénalisé du nombre de PdV en dessous de 0",
+  "AFMBE.Most actions suffer -1 through -5 penalty": "La plupart des actions souffrent d'une pénalité comprise entre -1 et -5",
+
+  "AFMBE.Simple": "Simple",
+  "AFMBE.Difficult": "Difficile",
+  "AFMBE.None": "Aucun·e",
+  
+  "AFMBE.Qualities": "Qualités",
+  
+  "AFMBE.Attribute Test": "Test d´Attribut",
+  "AFMBE.Roll Modifier": "Modificateur de lancer",
+
+  "AFMBE.Roll Again": "Relancer",
+  "AFMBE.Roll": "Lancer",
+  "AFMBE.Cancel": "Annuler",
+  "AFMBE.Modifier": "Modificateur",
+  "AFMBE.Result": "Résultat",
+
+  "AFMBE.Rule of 10!": "Règle de 10 !",
+  "AFMBE.Rule of 1!": "Règle de 1 !",
+  
+  "AFMBE.# of Shots": "Nbre de tirs",
+  "AFMBE.Firing Mode": "Mode de Tir",
+  "AFMBE.None/Melee": "Aucun/Mêlée",
+  "AFMBE.Semi-Auto": "Semi-auto",
+  "AFMBE.Burst Fire": "En rafale",
+  "AFMBE.Auto-Fire": "Automatique",
+  "AFMBE.Damage Roll": "Jet de dégâts",
+  "AFMBE.Detail": "Détail",
+  "AFMBE.You do not have enough ammo loaded to fire": "Vous ne disposez pas de suffisament de charge de munitions pour tirer pendant",
+  "AFMBE.rounds!": "rounds !",
+  
+  "AFMBE.Attribute Roll": "Jet d′Attribut",
+  "AFMBE.Weapon Roll": "Jet d′Arme",
+
+  "AFMBE.If a ranged weapon": "S'il s'agit d'une arme à distance",
+  "AFMBE.select how many shots": ", saisissez le nombre de tirs à effectuer puis sélectionnez le mode de tir de l'arme. Le nombre de tirs effectués sera déduit du contenu courant du chargeur de l'arme. Assurez-vous de disposer d'assez de munitions dans la chambre !",
+  "AFMBE.Otherwise, leave default and click roll.": "Sinon, laissez les valeurs par défaut et cliquez sur lancer.",
+  
+  "AFMBE.Two-Handed": "À deux mains",
+  "AFMBE.Slashing": "Taille",
+  "AFMBE.Stabbing": "Estoc",
+  "AFMBE.Normal Bullet": "Balle standard",
+  "AFMBE.Hollow Point": "Tête creuse",
+  "AFMBE.Armor Piercing": "Balle perçante",
+  "AFMBE.Shotgun": "Fusil à pompe",
+  "AFMBE.Explosive": "Explosif",
+  "AFMBE.Poison": "Poison",
+  "AFMBE.Corrosive": "Corrosif",
+
+  "AFMBE.Endurance Loss": "Perte d´Endurance",
+  "AFMBE.Essence Loss": "Perte d´Essence",
+  
+  "AFMBE.Test": "test",
+
+  "AFMBE.User Modifier": "Modific. de l′utilisateur",
+    
+  "AFMBE.Rule of One Re-Roll": "Règle de Un Relance",
+  "AFMBE.Rule of Ten Re-Roll": "Règle de Dix Relance",
+
+  "AFMBE.Light Mode": "Mode Clair",
+  "AFMBE.Checking this option enables Light Mode":
+            "Cocher cette option active le Mode Clair, supprimant l'esthétique du Mode Sombre des fiches.",
+  
+  "AFMBE.Delete Item": "Supprimer l'entrée",
+
+  "AFMBE.Quality": "Qualité",
+
+  "AFMBE.Options": "Options",
+  "AFMBE.Apply modifiers creature": "Appliquez les modificateurs des Compétences & Aspects de la créature.",
+  
+  "TYPES": {
+    "Actor": {
+      "character": "Personnage",
+      "creature": "Créature",
+      "vehicle": "Véhicule"
+    },
+    "Item": {
+      "quality": "Qualité",
+      "drawback": "Désavantage",
+      "skill": "Compétence",
+      "power": "Pouvoir",
+      "aspect": "Aspect",
+      "weapon": "Arme",
+      "item": "Objet"
+    }
+  
+  }
+}

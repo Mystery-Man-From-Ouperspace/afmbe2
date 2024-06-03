@@ -1,0 +1,226 @@
+<form class="{{cssClass}}" autocomplete="off">
+    {{log 'vehicle-sheet' this}} 
+    {{!-- Sheet Header --}}
+    <div class="sheet-flex-container">
+        <div class="sheet-sidebar">
+            <div class="header-container">
+                <!-- <img id="sheet-logo" src="systems/afmbe/images/afmbe_logo.png"> -->
+                <div class="polaroid-container">
+                    <img class="polaroid" src="systems/afmbe/images/polaroid.png">
+                    <img class="profile-img" data-edit="img" src="{{actor.img}}">
+                    <div class="sheet-nav-container" hidden>
+                        <nav class="sheet-nav sheet-tabs tabs" data-group="primary" >
+                            <a class="item" data-tab="core">{{ localize "AFMBE.Core" }}</a>
+                        </nav>
+                    </div>
+                    <div class="profile-tags-container">
+                        <div class="tags-flex-container"></div>
+                    </div>
+                </div>
+                <div class="header-info-container">
+                    <div class="info-container">
+                        <h1>
+                            <input class="charname" type="text" name="name" value="{{actor.name}}" placeholder="{{ localize 'Name' }}">
+                        </h1>
+                        <div class="attribute-container">
+                            <h2 id="attributes-header">
+                                <div>{{ localize "AFMBE.Primary Attributes" }}</div>
+                            </h2>
+                            <div class="resource-container">
+                                <div class="resource">
+                                    <button type="button">{{ localize "AFMBE.Weight" }}</button>
+                                    <div class="resource-values attribute">
+                                        <input type="number" name="system.weight" value="{{actor.system.weight}}">
+                                    </div>
+                                </div>
+                                <div class="resource">
+                                    <button type="button">{{ localize "AFMBE.Speed" }}</button>
+                                    <div class="resource-values attribute">
+                                        <input type="number" name="system.speed" value="{{actor.system.speed}}">
+                                    </div>
+                                </div>
+                                <div class="resource">
+                                    <button type="button">{{ localize "AFMBE.Acceleration" }}</button>
+                                    <div class="resource-values attribute">
+                                        <input type="number" name="system.acceleration" value="{{actor.system.acceleration}}">
+                                    </div>
+                                </div>
+                                <div class="resource">
+                                    <button type="button">{{ localize "AFMBE.Range" }}</button>
+                                    <div class="resource-values attribute">
+                                        <input type="number" name="system.range" value="{{actor.system.range}}">
+                                    </div>
+                                </div>
+                                <div class="resource">
+                                    <button type="button">{{ localize "AFMBE.Toughness" }}</button>
+                                    <div class="resource-values attribute">
+                                        <input type="number" name="system.toughness" value="{{actor.system.toughness}}">
+                                    </div>
+                                </div>
+                                <div class="resource">
+                                    <button type="button">{{ localize "AFMBE.Handling" }}</button>
+                                    <div class="resource-values attribute">
+                                        <input type="number" name="system.handling" value="{{actor.system.handling}}">
+                                    </div>
+                                </div>
+                                <div class="resource">
+                                    <button type="button">{{ localize "AFMBE.Damage Cpty" }}</button>
+                                    <div class="resource-values attribute">
+                                        <input type="number" name="system.damage_capacity" value="{{actor.system.damage_capacity}}">
+                                    </div>
+                                </div>
+                                <div class="resource">
+                                    <button type="button">{{ localize "AFMBE.Armor Value" }}</button>
+                                    <div class="resource-values attribute">
+                                        <input type="number" name="system.armor_value" value="{{actor.system.armor_value}}">
+                                    </div>
+                                </div>
+                                <div class="resource">
+                                    <button type="button">{{ localize "AFMBE.Accuracy" }}</button>
+                                    <div class="resource-values attribute">
+                                        <input type="number" name="system.accuracy" value="{{actor.system.accuracy}}">
+                                    </div>
+                                </div>
+                                <div class="resource">
+                                    <button type="button">{{ localize "AFMBE.Cost" }}</button>
+                                    <div class="resource-values attribute">
+                                        <input type="number" name="system.cost" value="{{actor.system.cost}}">
+                                    </div>
+                                </div>
+                                <div class="resource">
+                                    <button type="button">{{ localize "AFMBE.Availability" }}</button>
+                                    <div class="resource-values attribute">
+                                        <input type="text" name="system.availability" value="{{actor.system.availability}}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="sheet-body">
+
+            {{!-- Core Tab --}}
+            <div class="tab core" data-group="primary" data-tab="core">
+                <div class="bio-container">
+                    <h2>{{ localize "AFMBE.Description" }}</h2>
+                    {{editor descriptionHTML target="system.biography" button=true editable=editable engine="prosemirror"}}
+
+                </div>
+
+                <div class="weapon-table">
+                    <h2 class="header-with-button">
+                        <button type="button" class="create-item" data-create="weapon">+</button> 
+                        <span>{{ localize "AFMBE.Weapons" }}</span>
+                    </h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="table-left-align">{{ localize "AFMBE.Name" }}</th>
+                                <th>{{ localize "AFMBE.Range" }}</th>
+                                <th>{{ localize "AFMBE.Damage" }}</th>
+                                <th>{{ localize "AFMBE.Capacity" }}</th>
+                                <th>{{ localize "AFMBE.EV" }}</th>
+                                <th><span title="{{ localize 'AFMBE.Delete Item' }}"><i class="fas fa-trash"></i></span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#each actor.weapon as |item id|}}
+                                <tr class="item" data-item-id="{{item._id}}">
+                                    <td>
+                                        <div class="item-name-flex-container">
+                                            <i class="fas fa-dice-d20 damage-roll"></i>
+                                            <div class="item-name">{{item.name}}</div>
+                                        </div>
+                                    </td>
+                                    <td class="table-center-align">{{item.system.range}}</td>
+                                    <td class="table-center-align">{{item.system.damage}}</td>
+                                    <td>
+                                        <div class="table-flex-cell">
+                                            <div>{{item.system.capacity.value}}</div>
+                                            /
+                                            <div>{{item.system.capacity.max}}</div>
+                                        </div>
+                                    </td>
+                                    <td class="table-center-align">{{item.system.encumbrance}}</td>
+                                    <td class="table-center-align"><a class="item-control item-delete" title="{{ localize 'AFMBE.Delete Item' }}"><i class="fas fa-trash"></i></a></td>
+                                </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="item-table">
+                    <h2 class="header-with-button">
+                        <button type="button" class="create-item" data-create="item">+</button> 
+                        <span>{{ localize "AFMBE.Equipped Items" }}</span>
+                    </h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="table-left-align">{{ localize "AFMBE.Name" }}</th>
+                                <th>{{ localize "AFMBE.Qty" }}</th>
+                                <th>{{ localize "AFMBE.Armor Value" }}</th>
+                                <th>{{ localize "AFMBE.EV" }}</th>
+                                <th><span title="{{ localize 'AFMBE.Delete Item' }}"><i class="fas fa-trash"></i></span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#each actor.equippedItem as |item id|}}
+                                <tr class="item" data-item-id="{{item._id}}">
+                                    <td>
+                                        <div class="item-name-flex-container">
+                                            <input type="checkbox" class="toggleEquipped" {{checked item.system.equipped}}>
+                                            <div class="item-name">{{item.name}}</div>
+                                        </div>
+                                    </td>
+                                    <td class="table-center-align">{{item.system.qty}}</td>
+                                    <td class="table-center-align armor-button-cell">
+                                        <button type="button">{{item.system.armor_value}}</button>
+                                    </td>
+                                    <td class="table-center-align">{{item.system.encumbrance}}</td>
+                                    <td class="table-center-align"><a class="item-control item-delete" title="{{ localize 'AFMBE.Delete Item' }}"><i class="fas fa-trash"></i></a></td>
+                                </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="item-table">
+                    <h2 class="header-with-button">
+                        <button type="button" class="create-item" data-create="item">+</button> 
+                        <span>{{ localize "AFMBE.Items" }}</span>
+                    </h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="table-left-align">{{ localize "AFMBE.Name" }}</th>
+                                <th>{{ localize "AFMBE.Qty" }}</th>
+                                <th>{{ localize "AFMBE.EV" }}</th>
+                                <th><span title="{{ localize 'AFMBE.Delete Item' }}"><i class="fas fa-trash"></i></span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#each actor.item as |item id|}}
+                                <tr class="item" data-item-id="{{item._id}}">
+                                    <td>
+                                        <div class="item-name-flex-container">
+                                            <input type="checkbox" class="toggleEquipped" {{checked item.system.equipped}}>
+                                            <div class="item-name">{{item.name}}</div>
+                                        </div>
+                                    </td>
+                                    <td class="table-center-align">{{item.system.qty}}</td>
+                                    <td class="table-center-align">{{item.system.encumbrance}}</td>
+                                    <td class="table-center-align"><a class="item-control item-delete" title="{{ localize 'AFMBE.Delete Item' }}"><i class="fas fa-trash"></i></a></td>
+                                </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+</form>

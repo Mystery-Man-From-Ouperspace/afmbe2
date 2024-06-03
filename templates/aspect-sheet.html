@@ -1,0 +1,50 @@
+<form class="{{cssClass}}" autocomplete="off">
+
+    {{!-- Sheet Header --}}
+    <div class="item-sheet-header">
+        <h1 class="item-header-container">
+            <img class="item-img" src="{{item.img}}" data-edit="img">
+            <input type="text" name="name" value="{{item.name}}" placeholder="{{ localize 'Name' }}">
+        </h1>
+    </div>
+
+    <section>
+        <div class="description-container">
+            <div class="item-attribute-sidebar">
+                <h2>{{ localize "AFMBE.Attributes" }}</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>{{ localize "AFMBE.Power" }}</th>
+                            <td><input type="number" name="system.power" value="{{item.system.power}}"></td>
+                        </tr>
+                        <tr>
+                            <th>{{ localize "AFMBE.HP" }}+</th>
+                            <td><input type="number" name="system.resource_bonus.hp" value="{{item.system.resource_bonus.hp}}"></td>
+                        </tr>
+                        <tr>
+                            <th>{{ localize "AFMBE.Endurance" }}+</th>
+                            <td><input type="number" name="system.resource_bonus.endurance_points" value="{{item.system.resource_bonus.endurance_points}}"></td>
+                        </tr>
+                        <tr>
+                            <th>{{ localize "AFMBE.Speed" }}+</th>
+                            <td><input type="number" name="system.resource_bonus.speed" value="{{item.system.resource_bonus.speed}}"></td>
+                        </tr>
+                        <tr>
+                            <th>{{ localize "AFMBE.Essence" }}+</th>
+                            <td><input type="number" name="system.resource_bonus.essence" value="{{item.system.resource_bonus.essence}}"></td>
+                        </tr>
+                        <tr>
+                            <th>{{ localize "AFMBE.Initiative" }}+</th>
+                            <td><input type="number" name="system.resource_bonus.initiative" value="{{item.system.resource_bonus.initiative}}"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="item-description-sidebar">
+                <h2 class="item-desc">{{ localize "AFMBE.Description" }}</h2>
+                {{editor descriptionHTML target="system.description" button=true editable=editable engine="prosemirror"}}
+            </div>
+        </div>
+    </section>
+</form>

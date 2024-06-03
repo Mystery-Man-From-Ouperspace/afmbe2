@@ -1,0 +1,46 @@
+{
+    "name": "afmbe",
+    "title": "All Flesh Must Be Eaten (Unofficial)",
+    "description": "An unofficial digital system for playing All Flesh Must Be Eaten (AFMBE) by Eden Studios",
+    "version": "2.0.1",
+    "authors": [
+      {
+        "name": "DogBoneZone",
+        "url": ""
+      },
+      {
+        "name": "with help from Mystery Man From Outerspace (aka David Duke OVNI)",
+        "url": ""
+      }
+    ],
+    "esmodules": ["modules/main.js"],
+    "styles": ["styles/main.css"],
+    "languages": [
+        {
+          "lang": "en",
+          "name": "English",
+          "path": "lang/en.json"
+        },
+          {
+          "lang": "fr",
+          "name": "Français",
+          "path": "lang/fr.json"
+        }
+    ],
+    "compatibility": {
+      "minimum": "12",
+      "verified": "12"
+    },
+    "grid": {
+      "distance": 5,
+      "units": "ft"
+    },
+    "primaryTokenAttribute": "hp",
+    "secondaryTokenAttribute": "endurance_points",
+    "packs": [],
+    "url": "",
+    "background": "",
+    "manifest": "https://gitlab.com/DogBoneZone/afmbe/raw/main/system.json",
+    "download": "https://gitlab.com/DogBoneZone/afmbe/-/archive/1.27/afmbe-2.00.zip",
+    "license": "LICENSE.txt"
+}

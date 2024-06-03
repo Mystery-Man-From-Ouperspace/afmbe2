@@ -1,0 +1,184 @@
+{
+  "AFMBE.XP": "XP",
+  "AFMBE.Core": "Core",
+  "AFMBE.Equipment": "Equipment",
+  "AFMBE.Primary Attributes": "Primary Attributes",
+  "AFMBE.Strength": "Strength",
+  "AFMBE.Dexterity": "Dexterity",
+  "AFMBE.Constitution": "Constitution",
+  "AFMBE.Intelligence": "Intelligence",
+  "AFMBE.Perception": "Perception",
+  "AFMBE.Willpower": "Willpower",
+  "AFMBE.Secondary Attributes": "Secondary Attributes",
+  "AFMBE.Life Points": "Life Points",
+  "AFMBE.Endurance": "Endurance",
+  "AFMBE.Speed": "Speed",
+  "AFMBE.Initiative": "Initiative",
+  "AFMBE.Essence Pool": "Essence Pool",
+  "AFMBE.Description": "Description",
+  "AFMBE.Qualities & Pulling Strings": "Qualities & Pulling Strings",
+  "AFMBE.Drawbacks": "Drawbacks",
+  "AFMBE.Points": "Points",
+  "AFMBE.Skills": "Skills",
+  "AFMBE.Name": "Name",
+  "AFMBE.Level": "Level",
+  "AFMBE.Aspects": "Aspects",
+  "AFMBE.Powers": "Powers",
+  "AFMBE.Power": "Power",
+  "AFMBE.Lifting Capacity": "Lifting Capacity",
+  "AFMBE.Current Weight": "Current Weight",
+  "AFMBE.Max Carry Limit": "Max Carry Limit",
+  "AFMBE.Weapons" : "Weapons",
+  "AFMBE.Damage": "Damage",
+  "AFMBE.Capacity": "Capacity",
+  "AFMBE.EV": "EV",
+  "AFMBE.Equipped Items": "Equipped Items",
+  "AFMBE.Qty": "Qty",
+  "AFMBE.Armor Value": "Armor Value",
+  "AFMBE.Items": "Items",
+
+  "AFMBE.Norm": "Norm",
+  "AFMBE.Survivor": "Suvivor",
+  "AFMBE.Inspired": "Inspired",
+
+  "AFMBE.Hopeless": "Hopeless",
+  "AFMBE.Forlorn": "Forlorn",
+  "AFMBE.Exhausted": "Exhausted",
+  "AFMBE.Dying": "Dying",
+  "AFMBE.Semi-Conscious": "Semi-Conscious",
+  "AFMBE.Severely Injured": "Severely Injured",
+  "AFMBE.Lightly Encumbered": "Lightly Encumbered",
+  "AFMBE.Moderately Encumbered": "Moderately Encumbered",
+  "AFMBE.Heavily Encumbered": "Heavily Encumbered",
+
+  "AFMBE.Attributes": "Attributes",
+  "AFMBE.HP": "HP",
+  "AFMBE.Essence": "Essence",
+
+  "AFMBE.Range": "Range",
+  "AFMBE.Damage Multiplier": "Damage Multiplier",
+  "AFMBE.Damage Type": "Damage Type",
+  "AFMBE.Ammo Type": "Ammo Type",
+  "AFMBE.Cost": "Cost",
+
+  "AFMBE.Equipped": "Equipped",
+  "AFMBE.Quantity": "Quantity",
+  "AFMBE.RP": "RP",
+  "AFMBE.Space": "Space",
+
+  "AFMBE.quality": "quality",
+  "AFMBE.drawback": "drawback",
+  "AFMBE.skill": "skill",
+  "AFMBE.power": "power",
+  "AFMBE.aspect": "aspect",
+  "AFMBE.weapon": "weapon",
+  "AFMBE.item": "item",
+
+  "AFMBE.New": "New",
+
+  "AFMBE.Weight": "Weight",
+  "AFMBE.Acceleration": "Acceleration",
+  "AFMBE.Toughness": "Toughness",
+  "AFMBE.Handling": "Handling",
+  "AFMBE.Damage Cpty": "Damage Cpty",
+  "AFMBE.Accuracy": "Accuracy",
+  "AFMBE.Availability": "Availability",
+
+  "AFMBE.Apply modifiers": "Apply modifiers from the character's applicable Qualities, Drawbacks, or Skills.",
+  "AFMBE.Simple Test": "Simple Test: 2x Attribute",
+  "AFMBE.Difficult Test": "Difficult Test: 1x Attribute",
+
+  "AFMBE.All Tests suffer -3 penalty": "All Tests suffer -3 penalty",
+  "AFMBE.Mental tests suffer a -1 penalty": "Mental tests suffer a -1 penalty",
+  "AFMBE.All Tests suffer -2 penalty": "All Tests suffer -2 penalty",
+  "AFMBE.Survival Test required to avoid instant death": "Survival Test required to avoid instant death",
+  "AFMBE.Willpower test required to regain consciousness, penalized by the number their HP is below 0" :
+               "Willpower test required to regain consciousness, penalized by the number their HP is below 0",
+  "AFMBE.Most actions suffer -1 through -5 penalty": "Most actions suffer -1 through -5 penalty",
+
+  "AFMBE.Simple": "Simple",
+  "AFMBE.Difficult": "Difficult",
+  "AFMBE.None": "None",
+
+  "AFMBE.Qualities": "Qualities",
+
+  "AFMBE.Attribute Test": "Attribute Test",
+  "AFMBE.Roll Modifier": "Roll Modifier",
+
+  "AFMBE.Roll Again": "Roll Again",
+  "AFMBE.Roll": "Roll",
+  "AFMBE.Cancel": "Cancel",
+  "AFMBE.Modifier": "Modifier",
+  "AFMBE.Result": "Result",
+
+  "AFMBE.Rule of 10!": "Rule of 10!",
+  "AFMBE.Rule of 1!": "Rule of 1!",
+
+  "AFMBE.# of Shots": "# of Shots",
+  "AFMBE.Firing Mode": "Firing Mode",
+  "AFMBE.None/Melee": "None/Melee",
+  "AFMBE.Semi-Auto": "Semi-Auto",
+  "AFMBE.Burst Fire": "Burst Fire",
+  "AFMBE.Auto-Fire": "Auto-Fire",
+  "AFMBE.Damage Roll": "Damage Roll",
+  "AFMBE.Detail": "Detail",
+  "AFMBE.You do not have enough ammo loaded to fire": "You do not have enough ammo loaded to fire",
+  "AFMBE.rounds!": "rounds!",
+
+  "AFMBE.Attribute Roll": "Attribute Roll",
+  "AFMBE.Weapon Roll": "Weapon Roll",
+
+  "AFMBE.If a ranged weapon": "If a ranged weapon",
+  "AFMBE.select how many shots": ", select how many shots to take and select weapon firing mode. The number of shots fired will be reduced from the weapon's current load capacity. Make sure you have enough ammo in the chamber!",
+  "AFMBE.Otherwise, leave default and click roll.": "Otherwise, leave default and click roll.",
+
+  "AFMBE.Two-Handed": "Two-Handed",
+  "AFMBE.Slashing": "Slashing",
+  "AFMBE.Stabbing": "Stabbing",
+  "AFMBE.Normal Bullet": "Normal Bullet",
+  "AFMBE.Hollow Point": "Hollow Point",
+  "AFMBE.Armor Piercing": "Armor Piercing",
+  "AFMBE.Shotgun": "Shotgun",
+  "AFMBE.Explosive": "Explosive",
+  "AFMBE.Poison": "Poison",
+  "AFMBE.Corrosive": "Corrosive",
+
+  "AFMBE.Endurance Loss": "Endurance Loss",
+  "AFMBE.Essence Loss": "Essence Loss",
+
+  "AFMBE.Test": "Test",
+  
+  "AFMBE.User Modifier": "User Modifier",
+  
+  "AFMBE.Rule of One Re-Roll": "Rule of One Re-Roll",
+  "AFMBE.Rule of Ten Re-Roll": "Rule of Ten Re-Roll",
+
+  "AFMBE.Light Mode": "Light Mode",
+  "AFMBE.Checking this option enables Light Mode":
+            "Checking this option enables Light Mode, stripping away the dark mode aesthetics from the sheets.",
+
+  "AFMBE.Delete Item": "Delete Item",
+
+  "AFMBE.Quality": "Quality",
+
+  "AFMBE.Options": "Options",
+  "AFMBE.Apply modifiers creature": "Apply modifiers from the creature's Skills & Aspects.",
+
+  "TYPES": {
+    "Actor": {
+      "character": "Character",
+      "creature": "Creature",
+      "vehicle": "Vehicle"
+    },
+    "Item": {
+      "quality": "Quality",
+      "drawback": "Drawback",
+      "skill": "Skill",
+      "aspect": "Aspect",
+      "power": "Power",
+      "weapon": "Weapon",
+      "item": "Item"
+    }
+
+  }
+}

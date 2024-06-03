@@ -1,0 +1,791 @@
+/* ------------------------------------------- 
+        Fonts
+ ---------------------------------------------*/
+
+ @font-face {
+    font-family: "Jolly Roger";
+    src: url(../fonts/JollyLodger-Regular.ttf);
+}
+
+
+ /* ------------------------------------------- 
+        Global Styles
+ ---------------------------------------------*/
+
+ .afmbe.sheet.actor .window-content,
+ .afmbe.sheet.item .window-content {
+    background: rgb(22, 22, 22);
+    color: rgb(220, 220, 220);
+}
+
+.afmbe.sheet.actor .entity-link,
+.afmbe.sheet.actor .content-link,
+.afmbe.sheet.item .entity-link,
+.afmbe.sheet.item .content-link {
+   color: black;
+}
+
+.afmbe.sheet.actor button,
+.afmbe.sheet.item button {
+    color: rgb(231, 231, 231);
+    background:rgb(85, 85, 85);
+    border: 1px solid black;
+    height: 25px;
+    line-height: 10px;
+}
+
+.afmbe.sheet.actor input,
+.afmbe.sheet.actor select,
+.afmbe.sheet.item input,
+.afmbe.sheet.item select {
+    color: rgb(231, 231, 231);
+}
+
+.afmbe.sheet.item .window-content .editable {
+    background: rgb(45, 51, 56);
+}
+
+.afmbe option {
+    background: rgb(22, 22, 22);
+}
+
+.app.window-app.dialog .window-content {
+    background: rgb(22, 22, 22);
+}
+
+.app.window-app.dialog .dialog-content {
+    color: rgb(231, 231, 231);
+    padding: 0 5px;
+    background: rgb(41, 50, 59);
+}
+
+.app.window-app.dialog .dialog-buttons button {
+    color: rgb(231, 231, 231);
+    background: rgb(85, 85, 85);
+    border: 1px solid black;
+}
+
+.window-header {
+    background: rgb(22, 22, 22);
+}
+
+ .afmbe-dialog-menu {
+     display: flex;
+     flex-direction: column;
+     gap: 5px;
+     background: rgb(41, 50, 59);
+     color: rgb(231, 231, 231);
+ }
+
+ .afmbe h1,
+ .afmbe h2,
+ .afmbe-dialog-menu h1,
+ .afmbe-dialog-menu h2 {
+     font-family: "Jolly Roger";
+     width: 100%;
+ }
+
+ .afmbe-dialog-menu .menu-flex-container-row {
+     display: flex;
+     flex-direction: row;
+     align-items: flex-start;
+ }
+
+ .afmbe-dialog-menu .menu-flex-container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     padding: 0 0 20px 0;
+     width: 50%;
+     height: 100%;
+     gap: 5px;
+ }
+
+ .afmbe-dialog-menu .vertical-column {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     height: 100%;
+     text-align: center;
+ }
+
+ .afmbe-dialog-menu-text-box {
+     display: flex;
+     flex-direction: column;
+     background: rgba(124, 118, 118, 0.493);
+     padding: 5px;
+ }
+
+ .afmbe-dialog-menu .attribute-input {
+     width: 100%;
+ }
+
+ .afmbe-dialog-menu .table-center-align {
+     text-align: center;
+ }
+
+ .afmbe-dialog-menu .table-bold-text {
+     font-weight: bold;
+ }
+
+ .afmbe-dialog-menu input,
+ .afmbe-dialog-menu select {
+     color: white;
+     width: 100%;
+ }
+
+ .afmbe-dialog-menu option {
+    background: rgb(41, 50, 59);
+ }
+
+ .afmbe-tags-flex-container,
+ .afmbe-tags-flex-container-item {
+     color: black;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: flex-start;
+     flex-wrap: wrap;
+     gap: 5px;
+     padding: 0 0 5px 0;
+ }
+
+ .afmbe-tags-flex-container div {
+     background-color: rgba(131, 15, 15, 0.705);
+     color: white;
+     border-radius: 5px;
+     padding: 0 5px;
+     max-width: 100%;
+ }
+
+ .afmbe-tags-flex-container-item div {
+    background-color: rgba(0, 0, 0, 0.705);
+    color: white;
+    border-radius: 5px;
+    padding: 0 5px;
+    max-width: 100%;
+ }
+
+ .afmbe h2 {
+     margin: 0;
+     font-size: 22px;
+ }
+
+ .afmbe .table-left-align {
+     text-align: left;
+     padding: 0 0 0 10px;
+ }
+
+ .afmbe .header-with-button {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: flex-start;
+     gap: 5px;
+ }
+
+ .afmbe .header-with-button button {
+     width: 30px;
+ }
+
+ .afmbe button:hover,
+ .afmbe .item-name:hover,
+ .afmbe .profile-img:hover {
+     cursor: pointer;
+ }
+
+ .afmbe .item-name:hover {
+     /* font-weight: bold; */
+     color: rgb(255, 255, 255);
+     filter: drop-shadow(0px 0px 6px #af010a);
+ }
+
+ .afmbe .item-name-flex-container {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: flex-start;
+     gap: 5px;
+ }
+
+ .afmbe .fa-dice-d20:hover {
+     cursor: pointer;
+     color: darkred;
+ }
+
+ .afmbe .table-center-align {
+     text-align: center;
+ }
+
+.afmbe .table-flex-cell {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.afmbe .table-flex-cell input {
+    width: 30px;
+}
+
+.afmbe .table-equipped {
+    text-align: center;
+    width: 50px;
+}
+
+.afmbe .item input {
+    height: 15px;
+    width: 15px;
+}
+
+.afmbe tbody tr:nth-child(even) {
+    background: rgba(46, 46, 46, 0.541);
+}
+
+ /* ------------------------------------------- 
+        Chat Message Defaults
+ ---------------------------------------------*/
+
+ .chat-message h1,
+ .chat-message h2,
+ .chat-message .rule-of-chat-text {
+     font-family: "Jolly Roger"
+ }
+
+ .afmbe-chat-roll-table {
+     text-align: center;
+     font-weight: bold;
+ }
+
+ .chat-message button {
+     cursor: pointer;
+ }
+
+
+  /* ------------------------------------------- 
+        TinyMCE Editor
+ ---------------------------------------------*/
+
+ .editor h1,
+ .editor h2 {
+    font-family: "Jolly Roger";
+ }
+
+ .afmbe .bio-container .editor {
+     height: 200px;
+     width: 100%;
+ }
+
+ .afmbe .description-container .editor {
+    min-height: 300px;
+    width: 100%;
+ }
+
+ .afmbe .editor-content {
+     min-height: 200px;
+     max-height: 100%;
+ }
+
+ .afmbe .editor .tox-toolbar__group button {
+    background: rgba(190, 190, 190, 0.692);
+    color: black;
+ }
+
+ .afmbe .editor .tox-edit-area {
+     background: rgba(255, 255, 255, 0.808);
+ }
+
+ /* ------------------------------------------- 
+        Character Sidebar
+ ---------------------------------------------*/
+
+ .afmbe .sheet-flex-container {
+     display: flex;
+     flex-direction: row;
+     align-items: top;
+     justify-content: stretch;
+     flex-wrap: nowrap;
+     height: 100%;
+     background: rgb(62, 64, 66);
+ }
+
+ .afmbe .sheet-sidebar {
+     display: flex;
+     flex-direction: column;
+     min-width: 250px;
+     height: 100%;
+     border-right: 1px solid;
+     padding: 0 5px;
+     background: rgb(90, 93, 95);
+ }
+
+ .afmbe .sheet-sidebar input {
+     text-align: center;
+ }
+
+ .afmbe .sheet-body {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     height: 100%;
+     padding: 0 5px;
+     gap: 10px;
+ }
+ 
+ .afmbe .header-container {
+     position: relative;
+     top: 0;
+ }
+
+ .afmbe .info-container {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .afmbe .polaroid-container {
+     position: relative;
+ }
+
+ .afmbe .polaroid {
+     height: 250px;
+     border: none;
+     z-index: -1;
+ }
+
+ .afmbe .profile-img {
+     position: absolute;
+     top: 30px;
+     left: 32px;
+     border: 1px solid black;
+     height: 153px;
+     width: 145px;
+     transform: rotate(-3deg);
+     z-index: 1;
+ }
+ 
+ .afmbe #sheet-logo {
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 50px;
+     border: none;
+     z-index: +2;
+ }
+
+ .afmbe .sheet-nav-container {
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     background: rgba(41, 0, 0, 0.555);
+     z-index: 5;
+     font-family: "Jolly Roger";
+     font-size: x-large;
+     border-radius: 3px;
+     padding: 2px;
+ }
+
+
+
+ 
+ .afmbe .sheet-nav-container details > summary {
+    cursor: pointer;
+ }
+ 
+ .afmbe .sheet-nav-container #characterTypeSelect {
+    font-size: x-large;
+ }
+
+
+
+
+ .afmbe .sheet-nav {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     border: none !important;
+ }
+
+ .afmbe .sheet-nav a {
+     padding: 0 10px;
+ }
+
+ .afmbe .sheet-nav .active {
+     text-decoration: underline;
+ }
+
+ .afmbe .profile-tags-container {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     z-index: 3;
+ }
+
+ .afmbe .profile-tags-container .tags-flex-container {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+ }
+
+ .afmbe .tags-flex-container .tag {
+     border-radius: 5px;
+     background:rgba(124, 118, 118, 0.493);
+     color: darkred;
+     padding: 5px;
+     font-size: smaller;
+ }
+
+ .afmbe .xp-container {
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 50px;
+     text-align: center;
+ }
+
+ .afmbe .xp-flex-container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .afmbe .charname {
+     width: 100%;
+ }
+
+ .afmbe .attribute-container {
+    margin: 0 0 10px 0;
+ }
+
+ .afmbe .resource-container {
+     display: flex;
+     flex-direction: column;
+     padding: 0 5px;
+ }
+
+ .afmbe .resource {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+     flex-wrap: nowrap;
+     border-bottom: 1px solid rgb(145, 145, 145);
+     padding: 5px 0;
+ }
+
+ .afmbe .resource-values {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: nowrap;
+     gap: 5px;
+     width: 50%;
+ }
+
+ .afmbe .resource .attribute input {
+     width: 75%;
+     height: 20px;
+     color: white;
+ }
+
+ .afmbe .resource .secondaryAttribute input {
+    width: 50px;
+    height: 20px;
+    color: white;
+ }
+
+ .afmbe .resource button {
+     width: 50%;
+     height: 25px;
+     line-height: 10px;
+     color: white;
+     border: 1px solid black;
+ }
+
+ .afmbe #characterTypeSelect {
+     font-family: "Jolly Roger";
+     font-size: x-large;
+     text-align: center !important;
+ }
+
+ .afmbe #attributes-header {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: flex-start;
+     gap: 5px;
+ }
+
+  /* ------------------------------------------- 
+        Character Body Content
+ ---------------------------------------------*/
+
+ .afmbe .bio-container {
+     display: flex;
+     flex-direction: column;
+     border-bottom: 1px solid;
+ }
+
+ .afmbe .skill-item-container {
+     display: flex;
+     flex-direction: row;
+     align-items: top;
+     gap: 10px;
+ }
+
+ .afmbe .qualities-container,
+ .afmbe .drawbacks-container,
+ .afmbe .skills-container,
+ .afmbe .powers-container {
+     width: 50%;
+     border-radius: 3px;
+ }
+
+ .afmbe .equipment-header {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+     padding: 5px;
+     margin: 0 0 5px 0;
+     background: rgba(124, 118, 118, 0.493);
+ }
+
+ .afmbe .encumbrance-resource {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     font-family: "Jolly Roger";
+ }
+
+ .afmbe .encumbrance-resource div {
+     font-size: 20px;
+ }
+
+ .afmbe .weapon-table,
+ .afmbe .item-table,
+ .afmbe .qualities-container,
+ .afmbe .drawbacks-container,
+ .afmbe .skills-container,
+ .afmbe .powers-container {
+     margin: 10px 0 0 0;
+     background: rgba(78, 78, 78, 0.603);
+ }
+
+ .afmbe .armor-button-cell button {
+     max-width: 75%;
+     height: 18px;
+     line-height: 10px;
+ }
+
+/* ------------------------------------------- 
+        Item Sheets
+ ---------------------------------------------*/
+
+ .afmbe .item-sheet-container {
+    padding: 0 5px;
+    background: rgb(41, 50, 59);
+    height: 100%;
+ }
+
+ .afmbe .item-sheet-header {
+     display: flex;
+     flex-direction: row;
+ }
+
+ .afmbe .item-header-container {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     gap: 10px;
+ }
+
+ .afmbe .item-img {
+     width: 50px;
+     height: 50px;
+     border: none;
+ }
+
+ .afmbe .item-resource-container {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     gap: 10px;
+     padding: 0 0 10px 0;
+     text-align: center;
+ }
+
+ .afmbe .description-container table th {
+     width: 50%;
+     text-align: left;
+ }
+
+ .afmbe .description-container table input {
+     text-align: center;
+ }
+
+ .afmbe .description-container {
+     display: flex;
+     flex-direction: row;
+     height: 100%;
+ }
+
+ .afmbe .item-description-sidebar {
+     width: 100%;
+     padding: 0 5px;
+     border-left: 1px solid rgb(231, 231, 231);
+ }
+
+ .afmbe .item-attribute-sidebar {
+     min-width: 40%;
+     height: 100%;
+     padding: 0 5px;
+ }
+
+ .afmbe .item-attribute-sidebar table select,
+ .afmbe .item-attribute-sidebar table input {
+     width: 100%;
+     height: 20px;
+ }
+
+ .afmbe .item-attribute-flex-container {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+ }
+
+ /* ------------------------------------------- 
+        Limited Permission Sheets
+ ---------------------------------------------*/
+
+ .afmbe .blur {
+     filter: blur(5px);
+ }
+
+  /* ------------------------------------------- 
+        Light Mode Settings
+ ---------------------------------------------*/
+
+ .afmbe.sheet.actor.light-mode .window-content,
+ .afmbe.sheet.item.light-mode .window-content {
+    background: url('../images/parchment.jpg');
+    color: black;
+}
+
+.afmbe.sheet.actor.light-mode .entity-link,
+.afmbe.sheet.actor.light-mode .content-link,
+.afmbe.sheet.item.light-mode .entity-link,
+.afmbe.sheet.item.light-mode .content-link {
+   color: black;
+}
+
+.afmbe.sheet.actor.light-mode button,
+.afmbe.sheet.item.light-mode button {
+    color: black;
+    background: none;
+    border: 1px solid black;
+}
+
+.afmbe.sheet.actor.light-mode input,
+.afmbe.sheet.actor.light-mode select,
+.afmbe.sheet.item.light-mode input,
+.afmbe.sheet.item.light-mode select {
+    color: rgb(0, 0, 0);
+}
+
+.afmbe.sheet.item.light-mode .window-content .editable {
+    background: none;
+}
+
+.afmbe.light-mode option {
+    background: rgb(228, 228, 228);
+}
+
+.app.window-app.dialog.light-mode .window-content {
+    background: url('../images/parchment.jpg');
+}
+
+.app.window-app.dialog.light-mode .dialog-content {
+    color: rgb(0, 0, 0);
+    background: none;
+}
+
+.app.window-app.dialog.light-mode .dialog-buttons button {
+    color: rgb(0, 0, 0);
+    background: none;
+    border: 1px solid black;
+}
+
+.afmbe.light-mode .sheet-flex-container {
+    background: none;
+}
+
+.afmbe.light-mode .sheet-sidebar {
+    background: none;
+}
+
+.afmbe.light-mode .weapon-table,
+.afmbe.light-mode .item-table,
+.afmbe.light-mode .qualities-container,
+.afmbe.light-mode .drawbacks-container,
+.afmbe.light-mode .skills-container,
+.afmbe.light-mode .powers-container {
+    background: rgba(196, 196, 196, 0.603);
+}
+
+.afmbe.light-mode tbody tr:nth-child(even) {
+    background: rgba(218, 218, 218, 0.541);
+}
+
+.afmbe.light-mode .sheet-nav-container {
+    background: rgba(114, 114, 114, 0.616);
+}
+
+.afmbe.light-mode .item-description-sidebar {
+    border-left: 1px solid rgb(0, 0, 0);
+}
+
+.app.window-app.dialog.light-mode .window-content {
+    background: url('../images/parchment.jpg');
+}
+
+.app.window-app.dialog.light-mode .dialog-content {
+    color: black;
+    background: none;
+}
+
+.app.window-app.dialog.light-mode .dialog-buttons button {
+    color: black;
+    background: none;
+    border: 1px solid black;
+}
+
+.afmbe.window-app.dialog.light-mode .afmbe-dialog-menu {
+     background: none;
+     color: black;
+ }
+
+ .afmbe.window-app.dialog.light-mode .afmbe-dialog-menu-text-box {
+    background: none;
+}
+
+.afmbe.window-app.dialog.light-mode input,
+.afmbe.window-app.dialog.light-mode select {
+    color: black;
+}
+
+.afmbe.light-mode .item-name:hover {
+    /* font-weight: bold; */
+    color: rgb(0, 0, 0);
+    filter: drop-shadow(0px 0px 6px #af010a);
+}
