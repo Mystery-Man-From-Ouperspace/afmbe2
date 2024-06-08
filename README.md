@@ -1,5 +1,7 @@
 # AFMBE
 
+After afmbe, a Foundry VTT v10 system made by DogBoneZone - This is for Foundry VTT v12
+
 A fanmade FoundryVTT system to play All Flesh Must Be Eaten by Eden Studios. This system is unaffiliated with Eden Studios 
 and uses no trademarked content or media from any of the games or rulebooks. The system merely provides a framework to play the game.
 I highly encourage all users to buy or download a copy of the AFMBE Core Rulebook and many content additions. You can find some quick
