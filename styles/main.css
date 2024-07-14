@@ -789,3 +789,14 @@
     color: rgb(0, 0, 0);
     filter: drop-shadow(0px 0px 6px #af010a);
 }
+
+
+.journal-header input,
+  .journal-entry-page h1,
+  .journal-entry-page h2,
+  .journal-entry-page h3,
+  .journal-entry-page h4,
+  .journal-entry-page h5,
+  .journal-entry-page h6 {
+    font-family: "Jolly Roger";
+}
