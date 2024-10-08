@@ -2,7 +2,7 @@
     "name": "afmbe",
     "title": "All Flesh Must Be Eaten (Unofficial)",
     "description": "An unofficial digital system for playing All Flesh Must Be Eaten (AFMBE) by Eden Studios",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "authors": [
       {
         "name": "DogBoneZone",
@@ -40,7 +40,7 @@
     "packs": [],
     "url": "",
     "background": "",
-    "manifest": "https://gitlab.com/DogBoneZone/afmbe/raw/main/system.json",
-    "download": "https://gitlab.com/DogBoneZone/afmbe/-/archive/1.27/afmbe-2.00.zip",
+    "manifest": "http://serveurdavid.fr/download/foundry/afmbe/system-v12.json",
+    "download": "http://serveurdavid.fr/download/foundry/afmbe/afmbe-2.02.zip",
     "license": "LICENSE.txt"
 }
