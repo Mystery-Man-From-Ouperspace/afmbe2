@@ -336,12 +336,12 @@ export class afmbeActorSheet extends ActorSheet {
                         if (selectedDrawback != undefined) {tags.push(`<div>${selectedDrawback.name} ${selectedQuality.system.cost >= 0 ? '-' : '+'}${Math.abs(selectedDrawback.system.cost)}</div>`)}
 
                         if (roll.result == 10) {
-                            ruleOfDiv = `<h2 class="rule-of-chat-text">`+game.i18n.localize("AFMBE.Rule of 10!")+`</h2>
+                            ruleOfDiv = `<h2 class="rule-of-chat-text">`+game.i18n.localize(`AFMBE.Rule of 10!`)+`</h2>
                                         <button type="button" data-roll="roll-again" class="rule-of-ten">`+game.i18n.localize("AFMBE.Roll Again")+`</button>`
                             totalResult = 10
                         }
                         if (roll.result == 1) {
-                            ruleOfDiv = `<h2 class="rule-of-chat-text">`+game.i18n.localize("AFMBE.Rule of 1!")+`</h2>
+                            ruleOfDiv = `<h2 class="rule-of-chat-text">`+game.i18n.localize(`AFMBE.Rule of 1!`)+`</h2>
                                         <button type="button" data-roll="roll-again" class="rule-of-one">`+game.i18n.localize("AFMBE.Roll Again")+`</button>`
                             totalResult = 0
                         }
