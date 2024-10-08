@@ -107,12 +107,12 @@ Hooks.on("renderChatMessage", (app, html, data) => {
             let ruleOfDiv = ''
 
             if (roll.result == 10) {
-                ruleOfDiv = `<h2 class="rule-of-chat-text">`+game.i18n.localize(`AFMBE.Rule of 10!`)`</h2>
+                ruleOfDiv = `<h2 class="rule-of-chat-text">`+game.i18n.localize("AFMBE.Rule of 10!")`</h2>
                             <button type="button" data-roll="roll-again" class="rule-of-ten">`+game.i18n.localize(`AFMBE.Roll Again`)`</button>`
                 ruleOfMod = 5
             }
             if (roll.result == 1) {
-                ruleOfDiv = `<h2 class="rule-of-chat-text">`+game.i18n.localize(`AFMBE.Rule of 1!`)`</h2>
+                ruleOfDiv = `<h2 class="rule-of-chat-text">`+game.i18n.localize("AFMBE.Rule of 1!")`</h2>
                             <button type="button" data-roll="roll-again" class="rule-of-one">`+game.i18n.localize(`AFMBE.Roll Again`)`</button>`
                 ruleOfMod = -5
             }
